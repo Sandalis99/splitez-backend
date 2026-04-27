@@ -15,8 +15,8 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    process.env.FRONTEND_URL,
-  ].filter(Boolean),
+    "https://splitez-frontend-ckfi.vercel.app"
+  ],
   credentials: true,
 }));
 app.use(express.json({ limit: "10mb" })); // allow base64 avatar uploads
